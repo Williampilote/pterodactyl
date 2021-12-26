@@ -1,0 +1,42 @@
+:root {
+    --highlight-color: #b2b9bf;
+    /* Most light Text color */
+    --light-color: #2a2a2a;
+    /* Light Text color */
+    --color: #77787d;
+    /* Default Text color */
+    --sub-color: #a2b2c2;
+    /* Sub Text color */
+    --color-4: #7c8a99;
+    /* 5th Text color */
+    --color-5: #748291;
+    /* 6th Text color */
+    --color-6: #636f7d;
+    /* Darkest Text color */
+    --dark: #33383d;
+    /* Darkest color */
+    --background-color: #121519;
+    /* BackgroundColor of the page */
+    --input: #3e4653;
+    /* BackgroundColor of the input fields */
+    --input-border: #6b798d;
+    /* BorderColor of the input fields */
+    --secondary-hover: #1d1d1d;
+    /* Secondary Hover Color (lighter than secondary) */
+    --primary-hover: #006bec;
+    /* Primary Hover Color (lighter than primary) */
+    --secondary: #243242;
+    /* Secondary Color (for most of the boxxes) */
+    --primary: #137eff;
+    /* Primary Color */
+    --borders: #313151;
+    /* Color of most of the borders */
+    --black: #000000;
+    /* Black (dont touch) */
+    --white: #fff;
+    /* White (dont touch) */
+    --console: #080b0f;
+    /* BackgroundColor of the console */
+    --console-input: #050709;
+    /* backrgoundColor of the console input field */
+}
