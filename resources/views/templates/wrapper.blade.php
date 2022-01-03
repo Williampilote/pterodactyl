@@ -24,7 +24,7 @@
     <link href="/sorex/extra-libs/c3/c3.min.css" rel="stylesheet">
     <link href="/sorex/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="/sorex/css/style.min.css?v=1.0.3341" rel="stylesheet">
+    <link href="/sorex/css/style.min.css?v=2.0.2" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,7 +65,7 @@
         } else {
           document.getElementById("server-manage").style.visibility = "hidden";
         }
-    }, 100);
+    }, 1000);
 </script>
 </head>
 <body style="background-color: #2c3b4c;">
@@ -263,14 +263,14 @@
                             <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                                 <i class="mdi mdi-shopping"></i>
                                 <span class="hide-menu">Server Billing </span>
-                                <span class="badge badge-pill badge-info ml-auto m-r-15">1</span>
+                                <!-- <span class="badge badge-pill badge-info ml-auto m-r-15">1</span> -->
                             </a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item">
                                     <a href="{{ url('/billing/plutonium/plans') }}" class="sidebar-link">
                                         <i class="mdi mdi-shopping"></i>
                                         <span class="hide-menu"> Shop </span>
-                                        <span class="badge badge-pill badge-info ml-auto m-r-15">1</span>
+                                        <!-- <span class="badge badge-pill badge-info ml-auto m-r-15">1</span> -->
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
@@ -415,183 +415,7 @@
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- customizer Panel -->
-    <!-- ============================================================== -->
-    <aside class="customizer">
-        <a href="javascript:void(0)" class="service-panel-toggle">
-            <i class="fa fa-spin fa-cog"></i>
-        </a>
-        <div class="customizer-body">
-            <ul class="nav customizer-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-                        <i class="mdi mdi-wrench font-20"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#chat" role="tab" aria-controls="chat" aria-selected="false">
-                        <i class="mdi mdi-message-reply font-20"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
-                        <i class="mdi mdi-star-circle font-20"></i>
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <!-- Tab 1 -->
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="p-15 border-bottom">
-                        <!-- Sidebar -->
-                        <h5 class="font-medium m-b-10 m-t-10">Layout Settings</h5>
-                        <div class="custom-control custom-checkbox m-t-10">
-                            <input type="checkbox" class="custom-control-input sidebartoggler" name="collapssidebar" id="collapssidebar">
-                            <label class="custom-control-label" for="collapssidebar">Collapse Sidebar</label>
-                        </div>
-                        <div class="custom-control custom-checkbox m-t-10">
-                            <input type="checkbox" class="custom-control-input" name="sidebar-position" id="sidebar-position">
-                            <label class="custom-control-label" for="sidebar-position">Fixed Sidebar</label>
-                        </div>
-                        <div class="custom-control custom-checkbox m-t-10">
-                            <input type="checkbox" class="custom-control-input" name="header-position" id="header-position">
-                            <label class="custom-control-label" for="header-position">Fixed Header</label>
-                        </div>
-                        <div class="custom-control custom-checkbox m-t-10">
-                            <input type="checkbox" class="custom-control-input" name="boxed-layout" id="boxed-layout">
-                            <label class="custom-control-label" for="boxed-layout">Boxed Layout</label>
-                        </div>
-                    </div>
-                    <div class="p-15 border-bottom">
-                        <!-- Logo BG -->
-                        <h5 class="font-medium m-b-10 m-t-10">Logo Backgrounds</h5>
-                        <ul class="theme-color">
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-logobg="skin1"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-logobg="skin2"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-logobg="skin3"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-logobg="skin4"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-logobg="skin5"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-logobg="skin6"></a>
-                            </li>
-                        </ul>
-                        <!-- Logo BG -->
-                    </div>
-                    <div class="p-15 border-bottom">
-                        <!-- Navbar BG -->
-                        <h5 class="font-medium m-b-10 m-t-10">Navbar Backgrounds</h5>
-                        <ul class="theme-color">
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-navbarbg="skin1"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-navbarbg="skin2"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-navbarbg="skin3"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-navbarbg="skin4"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-navbarbg="skin5"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-navbarbg="skin6"></a>
-                            </li>
-                        </ul>
-                        <!-- Navbar BG -->
-                    </div>
-                    <div class="p-15 border-bottom">
-                        <!-- Logo BG -->
-                        <h5 class="font-medium m-b-10 m-t-10">Sidebar Backgrounds</h5>
-                        <ul class="theme-color">
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin1"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin2"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin3"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin4"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin5"></a>
-                            </li>
-                            <li class="theme-item">
-                                <a href="javascript:void(0)" class="theme-link" data-sidebarbg="skin6"></a>
-                            </li>
-                        </ul>
-                        <!-- Logo BG -->
-                    </div>
-                </div>
-                <!-- End Tab 1 -->
-                <!-- Tab 2 -->
-                <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <ul class="mailbox list-style-none m-t-20">
-                        <li>
-                            
-                            <div class="p-15 ">
-                            <h5 class="font-medium m-b-10 m-t-10">Unavailable</h5>
-                            </div>
-                            <div class="message-center chat-scroll">
-                                <!-- Message -->
-                                <a href="javascript:void(0)" class="message-item" id='chat_user_2' data-user-id='2'>
-                                    <span class="user-img">
-                                        <img src="{{ "https://www.gravatar.com/avatar/" . md5( strtolower( trim( Auth::user()->email ) ) ) }}" alt="user" class="rounded-circle">
-                                        <span class="profile-status busy pull-right"></span>
-                                    </span>
-                                    <div class="mail-contnet">
-                                        <h5 class="message-title">{{ Auth::user()->name }}</h5>
-                                        <span class="mail-desc">I've sung a song! See you at</span>
-                                        <span class="time">9:10 AM</span>
-                                    </div>
-                                </a>
-                                <!-- Message -->
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- End Tab 2 -->
-                <!-- Tab 3 -->
-                <div class="tab-pane fade p-15" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <h6 class="m-t-20 m-b-20">Activity Timeline</h6>
-                    <h5 class="font-medium m-b-10 m-t-10">Unavailable</h5>
-                    <div class="steamline">
-                        <div class="sl-item">
-                            <div class="sl-left">
-                                <img class="rounded-circle" alt="user" src="{{ "https://www.gravatar.com/avatar/" . md5( strtolower( trim( Auth::user()->email ) ) ) }}"> </div>
-                            <div class="sl-right">
-                                <div class="font-medium">{{ Auth::user()->name }}
-                                    <span class="sl-date">5 minutes ago</span>
-                                </div>
-                                <div class="desc">Contrary to popular belief</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Tab 3 -->
-            </div>
-        </div>
-    </aside>
-    <div class="chat-windows"></div>
+
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
@@ -626,9 +450,6 @@
 </body>
 @else
 <head>
-
-
-    <link rel="stylesheet" href="/sorex/css/style.css">
     <link rel="stylesheet" href="/sorex/css/home.css">
 
     <link rel="shortcut icon" href="/favicons/favicon.ico">
@@ -636,7 +457,7 @@
     <link href="/sorex/extra-libs/c3/c3.min.css" rel="stylesheet">
     <link href="/sorex/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="/sorex/css/style.min.css?v=1.0.3342" rel="stylesheet">
+    <link href="/sorex/css/style.min.css?v=2.0.2" rel="stylesheet">
 
 </head>
 
@@ -657,13 +478,13 @@
         <!-- ============================================================== -->
         <!-- Login box.scss -->
         <!-- ============================================================== -->
-        <div class="container" class="login">
+        <div class="container containerr" class="login">
         <footer class="footer text-center">
                 All Rights Reserved by Sorexproject. Designed and Developed by
                 <a href="https://github.com/Williampilote">Williampilote</a>.
     </footer>
         <canvas id="c"></canvas>
-        <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" >
+        <div class="auth-wrapper no-block justify-content-center align-items-center" >
                 <div class="auth-box">
                     <div id="loginform">
                         <div class="logo">
@@ -678,7 +499,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </div>
     <!-- ============================================================== -->
     <!-- All Required js -->
@@ -690,8 +511,8 @@
     <!-- AngularJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-animate.min.js"></script>
-    <script src="/sorex/js/home/adAccueil.js"></script>
-    <script src="/sorex/js/home/accueil.js?v=2.2"></script>
+    <script src="/sorex/js/home/adAccueil.js?v=2.4"></script>
+    <script src="/sorex/js/home/accueil.js?v=2.4"></script>
     <!-- ============================================================== -->
     <!-- This page plugin js -->
     <!-- ============================================================== -->

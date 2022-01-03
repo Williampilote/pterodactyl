@@ -67,11 +67,11 @@ export default ({ match, location }: RouteComponentProps<{ token: string }>) => 
                 >
                     <div>
                         <label>Email</label>
-                        <Input value={email} isLight disabled/>
+                        <Input value={email} disabled/>
                     </div>
                     <div css={tw`mt-6`}>
                         <Field
-                            light = {false}
+                            light = {true}
                             label={'New Password'}
                             name={'password'}
                             type={'password'}
@@ -80,7 +80,7 @@ export default ({ match, location }: RouteComponentProps<{ token: string }>) => 
                     </div>
                     <div css={tw`mt-6`}>
                         <Field
-                            light = {false}
+                            light = {true}
                             label={'Confirm New Password'}
                             name={'passwordConfirmation'}
                             type={'password'}
